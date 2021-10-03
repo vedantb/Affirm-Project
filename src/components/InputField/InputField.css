@@ -1,0 +1,26 @@
+.input-field {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  height: 48px;
+  margin: 16px 0;
+  margin-bottom: 0;
+  padding: 12px 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.input-field:focus ~ .error-message {
+  display: none;
+}
+
+.input-field.error {
+  border: 2px solid red;
+}
+
+.error-message {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: red;
+}
