@@ -2,8 +2,11 @@ import { useState } from "react";
 import "./CardForm.css";
 import InputField from "../InputField/InputField";
 import { AMEX, VISA } from "../../constants";
-import { validateAmex, validateVisa } from "../../utils/validate-cards";
-import { formatCreditcardNumber } from "../../utils/card-utils";
+import {
+  formatCreditcardNumber,
+  validateAmex,
+  validateVisa
+} from "../../utils/card-utils";
 import amex from "../../icons/amex.svg";
 import visa from "../../icons/visa.svg";
 

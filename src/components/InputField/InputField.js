@@ -8,7 +8,8 @@ function InputField({
   type = "text",
   value,
   validateField,
-  onChange
+  onChange,
+  ...props
 }) {
   const [isError, setIsError] = useState(false);
 
@@ -28,6 +29,7 @@ function InputField({
         onFocus={() => setIsError(false)}
         value={value}
         onChange={onChangeHandler}
+        {...props}
       />
       {isError && <span className="error-message">{errorMessage}</span>}
     </div>
